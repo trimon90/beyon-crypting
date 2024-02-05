@@ -5,6 +5,8 @@ services:
         dockerfile: Dockerfile-go
     environment:
         PORT: "8000"
+    ports:
+        - "8000:8000"
   service-py:
     build:
         context: .

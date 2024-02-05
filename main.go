@@ -26,15 +26,15 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 func counter(w http.ResponseWriter, r *http.Request) {
 	// oh, here we go
-	w.WriteHeader(http.StatusNotImplemented)
-	w.Write([]byte("Sorry :("))
+	// w.WriteHeader(http.StatusNotImplemented)
+	w.Write([]byte("3"))
 }
 
 func main() {
 	// Register the handler function for the /handler endpoint
 	ADDRESS := os.Getenv("ADDRESS")
 	PORT := os.Getenv("PORT")
-	SERVER := fmt.Sprintf("%s%s", ADDRESS, PORT)
+	SERVER := fmt.Sprintf("%s:%s", ADDRESS, PORT)
 
 	http.HandleFunc("/handler", handler)
 	http.HandleFunc("/counter", counter)

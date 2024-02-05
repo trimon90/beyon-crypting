@@ -5,7 +5,7 @@ import os
 from sys import exit
 
 
-HOST = os.environ.get("HOST", "0.0.0.0")
+HOST = os.environ.get("HOST", "127.0.0.1")
 PORT = os.environ.get("PORT", 8080)
 
 ENDPOINTS_DIRECT = ["/one/"]

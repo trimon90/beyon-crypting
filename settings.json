@@ -1,5 +1,6 @@
 {
 	"MESSAGE": "this is the reply",
-	"TIMEOUT": "0.5",
+	"TIMEOUT": 0.5,
 	"backend_port": 8000,
-
+        "backend_host": "beyon-crypting-service-go-1"
+}
